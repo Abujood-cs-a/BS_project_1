@@ -1,0 +1,235 @@
+/* Start  Global Variable*/
+:root {
+    --main: #ff0000;
+    --black: #000;
+    --white: #fff;
+
+}
+
+::selection {
+    background-color: var(--main);
+    color: var(--white);
+}
+
+/* Start  Global Variable*/
+
+/* Start Global Rule */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "STIX Two Text", serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(24, 22, 22), #6a6d6e);
+    overflow-x: hidden;
+}
+
+.btn {
+    background-color: var(--main) !important;
+    width: 100px;
+    color: var(--white) !important;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px 10px;
+    transition: 0.3s;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.content h5 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+@media (max-width:767px) {
+    .content h5 {
+        font-size: 20px;
+    }
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.content a:hover {
+    letter-spacing: 2px;
+    color: var(--main) !important;
+}
+
+.btn:hover {
+    letter-spacing: 3px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* End Global Rule */
+
+/* start Header */
+.navbar {
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar.scroll {
+    background: rgb(133, 126, 126) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--white) !important;
+
+}
+
+.navbar-brand span {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: var(--main) !important;
+}
+
+.navbar .active {
+    background-color: var(--main);
+    border-radius: 5px;
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    color: var(--white) !important;
+    margin-left: 5px;
+}
+
+.navbar .btn {
+    background-color: var(--main);
+    width: 100px;
+    border-radius: 5px;
+}
+
+/* End Header */
+
+/* Start Home */
+.a {
+    padding: 100px;
+}
+
+.a .row {
+    position: relative;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.a .col-sm-7 img {
+    height: 450px;
+    width: 830px;
+}
+
+.a .text-section h3 {
+    font-weight: 600;
+    font-size: 56px;
+    color: var(--white);
+    margin-bottom: 30px;
+
+}
+
+.a .text-section h3 span {
+    color: var(--main);
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.a .text-section p {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.col-sm-7 img {
+    margin-left: 100px;
+}
+
+@media (max-width:767px) {
+    .col-sm-7 img {
+        margin-left: 0;
+    }
+}
+
+.a .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    z-index: 1;
+    opacity: 0.3;
+}
+
+/* End Home */
+
+/* start Popular Car  */
+.container .roww {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width:767px) {
+    .container .box {
+        text-align: center;
+        width: 100% !important;
+    }
+
+}
+
+.container .box {
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px -10px rgb(0, 0, 0, 0.2),
+        inset 10px 10px 10px -10px rgb(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover {
+    background-image: linear-gradient(45deg, #423738, #5c5353) !important;
+    cursor: pointer;
+}
+
+.container .box img {
+    margin-top: -20px !important;
+}
+
+.container .box_content h6 {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--white);
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* End Popular Car  */
